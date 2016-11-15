@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule .md$ http://www.troot.co.kr/culture/k.php?md=%{REQUEST_FILENAME}
+RewriteRule ^rss$ http://www.troot.co.kr/culture/index.php?rss
