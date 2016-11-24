@@ -72,7 +72,11 @@
             }
 
             $aa = str_replace(".md", "", $aa);
+            if (strpos($aa, "notice") === 0) {
+                $aa = str_replace("notice", "", $aa);
+                $aa = "<b>".$aa."</b>";
 
+        }
 
             echo '<li><a class=uline href="./' . $t . '">' . $aa . "</a> <span>" . $date . "</span></li>";
     }
